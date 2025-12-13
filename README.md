@@ -55,7 +55,7 @@ examples/    → Multi-stack examples (Flutter, Go, Templ, Jaspr, Gladiolus)
 To explore or contribute:
 
 ```bash
-git clone https://github.com/<ORG>/glyph
+git clone https://github.com/divijg19/glyph
 cd glyph
 ```
 
@@ -69,7 +69,7 @@ dart run bin/wisp.dart repl
 ### Build a Sparq WASM module (placeholder)
 
 ```bash
-rig glyph build example.glyph
+rig glyph build example.gl
 ```
 
 ### Run the LSP server (Go)
